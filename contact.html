@@ -5,15 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Menu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <style>
         *{
-            background-color: #364f6b;
+            margin: 0;
         }
-        h1{
-            text-decoration: underline;
-            /* text-align: center; */
-            margin-left: 100px;
-            color: #e2f3f5;
+        h2{
+            margin: 10px;
+        }
+        nav{
+            position: sticky;
+            top: 0;
+            z-index: 99;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background-color: rgb(31, 163, 163);
+        }
+
+        nav li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: rgb(22, 113, 119);
+        }
+
+        .active {
+            background-color: rgb(24, 112, 128);
+        }
+
+        .name{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: larger;
         }
 
         img{
@@ -21,30 +58,9 @@
             width: 200px;
             padding: 30px;
         }
-
-        .bar{
-            width: fit-content;
-            padding: 20px;
-            color: white;
-        }
-
-        .bar li{
-            list-style-type: none;
-        }
-
-        .bar a{
-            text-decoration: none;
-            padding-left: 20px;
-            color: white;
-        }
-
-        .bar a:hover{
-            color: lightgreen;
-            text-decoration: underline;
-        }
-        
-        .tel{
-            color: lightgrey;
+        ul{
+            color: rgb(63, 28, 219);
+            margin-bottom: 40px;
         }
 
         iframe{
@@ -54,17 +70,22 @@
     </style>
 </head>
 <body>
-    <h1><i>Lovely Food</i></h1>
-
-    <ul class="bar">
+    <h2>
+        Thank you for your visiting.... <br>
+        If you want to order, contact us.... <br>
+        You can get delivery service.Just call us..
+    </h2>
+    <nav>
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
-    </ul>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li class="name"><i>Food Eatery</i></li>
+    </nav>
 
-    <ul class="tel">
-        <li>0996758654843</li>
-        <li>email - lovelyfood@gmail.com</li>
-        <li><Address>No.1, Padauk Street, Yankin, Yangon</Address></li>
+    <ul>
+        <a><i class="fas fa-phone-volume"></i>0996758654843</a>
+        <a><i class="far fa-envelope"></i>>>lovelyfood@gmail.com</a>
+        <Address><i class="fas fa-map-marker-alt"></i>No.1, Padauk Street, Yankin, Yangon</Address>
     </ul>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.921951506776!2d96.1616819636537!3d16.830227592889454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193b75bd24d0d%3A0xd84643333ff6a56e!2sInn%20Lay%20Shan%20Noodles%20%26%20Traditional%20Foods!5e0!3m2!1sen!2sus!4v1628500372287!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

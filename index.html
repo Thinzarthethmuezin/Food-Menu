@@ -4,52 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Menu</title>
+    <title>Food Eatery</title>
     <style>
         *{
-            background-color: #364f6b;
+            margin: 0;
         }
-        h1{
-            text-decoration: underline;
-            /* text-align: center; */
-            margin-left: 100px;
-            color: #e2f3f5;
-        }
-
-        img{
-            height: 200px;
-            width: 200px;
-            padding: 30px;
+        nav{
+            position: sticky;
+            top: 0;
+            z-index: 99;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background-color: rgb(43, 132, 167);
         }
 
-        .bar{
-            width: fit-content;
-            padding: 20px;
+        li {
+            float: left;
         }
 
-        .bar a{
-            text-decoration: none;
+        li a {
+            display: inline-block;
             color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
 
-        .bar a:hover{
-            color: lightgreen;
-            text-decoration: underline;
+        li a:hover {
+            background-color: rgb(32, 99, 116);
+        }
+
+        .active {
+            background-color: rgb(43, 97, 133);
+        }
+
+        .name{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: larger;
         }
         iframe{
-            width: 100%;
+            float: left;
+            padding:0 15px 10px 0;
         }
 
     </style>
 </head>
 <body>
-    <h1><i>Lovely Food</i></h1>
-
-    <ul class="bar">
+    <header>
+        <h2>Hello,</h2>
+        <p>
+            Welcome from our food services....
+        </p>
+    </header>
+    <nav>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="contact.html">Contact</a></li>
-    </ul>
+        <li class="name"><i>Food Eatery</i></li>
+    </nav>
+    <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/T4NOt727wqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident laboriosam reiciendis maiores, iste ducimus consequatur dolorum nostrum doloremque iure beatae cumque doloribus, cupiditate blanditiis rem ipsa omnis magni nemo laborum!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem dignissimos velit quo in. Distinctio inventore ut iste possimus sit iusto et doloribus? Tempore atque rem reprehenderit officia, quisquam nostrum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus non sed doloremque nulla et neque corporis vitae sit alias labore at, in porro, velit aliquid est doloribus numquam! Cupiditate.
+    </p>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/T4NOt727wqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 </body>
 </html>
